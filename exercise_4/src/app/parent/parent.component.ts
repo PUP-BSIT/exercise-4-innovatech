@@ -16,7 +16,9 @@ export class ParentComponent {
 
   addProduct() {
     const newId = this.products.length + 1;
-    const newProduct: Product = {id: newId, product_name:this.newProduct.product_name, price:this.newProduct.price};
+    const newProduct: Product = {id: newId, 
+      product_name:this.newProduct.product_name, 
+      price:this.newProduct.price};
 
     this.products.push(newProduct);
   

@@ -1,6 +1,8 @@
 # Exercise4
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.5.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.5. 
+
+Visit: https://exercise-4-innovatech.netlify.app that allows users to create, read, update, and delete product entries, each containing a name and corresponding price.
 
 ## Development server
 

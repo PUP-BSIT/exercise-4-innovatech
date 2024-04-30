@@ -39,4 +39,8 @@ export class ParentComponent {
     this.newProduct.product_name= '';
     this.newProduct.price= null;
   }
+  
+  deleteProduct(productId:number){
+    this.products = this.products.filter(product => product.id !== productId);
+  }
 }

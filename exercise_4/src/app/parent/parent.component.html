@@ -1,15 +1,23 @@
 <div class="container">
     <div class="form-group">
       <label for="productName">Product Name:</label>
-      <input id="productName" type="text" [(ngModel)]="newProduct.product_name" placeholder="Enter Product Name">
+      <input id="productName" type="text" 
+             [(ngModel)]="newProduct.product_name" 
+             placeholder="Enter Product Name">
     </div>
     <div class="form-group">
       <label for="productPrice">Price:</label>
-      <input id="productPrice" type="number" [(ngModel)]="newProduct.price" placeholder="Enter Product Price">
+      <input id="productPrice" type="number" 
+             [(ngModel)]="newProduct.price" 
+             placeholder="Enter Product Price">
     </div>
     <div class="actions">
-      <button class="button" (click)="addProduct()">Add Product</button> 
-      <button class="button" (click)="updateProduct()">Update Product</button>
+      <button class="button" (click)="addProduct()">
+        Add Product
+      </button> 
+      <button class="button" (click)="updateProduct()">
+        Update Product
+      </button>
     </div>
     <div class="table-container">
     <table>
@@ -27,8 +35,12 @@
               <td>{{ product.product_name }}</td>
               <td>{{ product.price }}</td>
               <td class="actions">
-                <button class="button" (click)="editProduct(product)">Edit Product</button>
-                <button class="button" (click)="deleteProduct(product.id)">Delete Product</button>
+                <button class="button" (click)="editProduct(product)">
+                  Edit Product
+                </button>
+                <button class="button" (click)="deleteProduct(product.id)">
+                  Delete Product
+                </button>
               </td>
             </tr>
         </tbody>

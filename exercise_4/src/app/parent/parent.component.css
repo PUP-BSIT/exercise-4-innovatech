@@ -1,0 +1,81 @@
+.container {
+    margin: 20px;
+    text-align: center;
+}
+  
+.form-group {
+    margin-bottom: 15px;
+}
+  
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #757373;
+    font-weight: bold;
+}
+  
+.form-group input[type="text"],
+.form-group input[type="number"] {
+    width: 40%;
+    padding: 10px;
+    border: 1px solid #3a3a3a;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+  
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+  
+.button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #3ce055;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+  
+.button:hover {
+    background-color: #63b370;
+    transform: scale(1.05);
+}
+  
+.button:focus {
+    outline: none;
+}
+  
+.table-container {
+    margin-top: 20px;
+    overflow-x: auto; 
+    text-align: center; 
+}
+  
+table {
+    width: 50%;
+    margin: 0 auto; 
+    border-collapse: collapse;
+    border-radius: 5px;
+    overflow: hidden; 
+}
+  
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd; 
+}
+  
+th {
+    background-color: #3ce055;
+    color: #fff;
+}
+  
+tbody tr:hover {
+    background-color: #f9f9f9;
+}

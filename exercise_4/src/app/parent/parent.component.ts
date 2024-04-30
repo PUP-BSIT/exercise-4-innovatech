@@ -23,4 +23,20 @@ export class ParentComponent {
     this.newProduct.product_name= '';
     this.newProduct.price= null;
   }
+
+  editProduct(product:Product){
+    this.newProduct.id = product.id;
+    this.newProduct.product_name=product.product_name;
+    this.newProduct.price=product.price;
+  }
+  
+  updateProduct(){
+    const index = this.products.findIndex(p => p.id === this.newProduct.id);
+    if (index !== -1){
+      this.products[index].product_name = this.newProduct.product_name;
+      this.products[index].price=this.newProduct.price;
+    }
+    this.newProduct.product_name= '';
+    this.newProduct.price= null;
+  }
 }
